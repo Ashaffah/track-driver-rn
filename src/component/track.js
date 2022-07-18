@@ -18,10 +18,46 @@ export default class Track extends Component {
     const { country } = this.state;
     return (
       <>
-        <View style={tw`flex-auto my-auto mx-auto justify-center w-18`}>
+        <View style={tw`flex justify-center`}>
+          <Text style={tw`mb-1 font-semibold text-lg`}>TES</Text>
           <SelectDropdown
-            buttonStyle={tw`bg-red-500 text-center text-white px-4 py-4 w-18 rounded-lg`}
-            dropdownStyle={tw`bg-blue-500 text-white text-center my-auto mx-auto w-18 rounded-lg`}
+            buttonStyle={tw`bg-red-500 mb-4 px-4 py-4 max-w-none h-auto rounded-lg`}
+            dropdownStyle={tw`bg-blue-500 max-w-none rounded-lg`}
+            buttonTextStyle={tw`text-center text-white`}
+            rowTextStyle={tw`text-center text-white`}
+            data={country}
+            onSelect={(val, index) => {
+              console.log(val, index);
+            }}
+          />
+          <Text style={tw`mb-1 font-semibold text-lg`}>TES</Text>
+          <SelectDropdown
+            buttonStyle={tw`bg-red-500 mb-4 px-4 py-4 max-w-none h-auto rounded-lg`}
+            dropdownStyle={tw`bg-blue-500 max-w-none rounded-lg`}
+            buttonTextStyle={tw`text-center text-white`}
+            rowTextStyle={tw`text-center text-white`}
+            data={country}
+            onSelect={(val, index) => {
+              console.log(val, index);
+            }}
+          />
+          <Text style={tw`mb-1 font-semibold text-lg`}>TES</Text>
+          <SelectDropdown
+            buttonStyle={tw`bg-red-500 mb-4 px-4 py-4 max-w-none h-auto rounded-lg`}
+            dropdownStyle={tw`bg-blue-500 max-w-none rounded-lg`}
+            buttonTextStyle={tw`text-center text-white`}
+            rowTextStyle={tw`text-center text-white`}
+            data={country}
+            onSelect={(val, index) => {
+              console.log(val, index);
+            }}
+          />
+          <Text style={tw`mb-1 font-semibold text-lg`}>TES</Text>
+          <SelectDropdown
+            buttonStyle={tw`bg-red-500 px-4 py-4 max-w-none h-auto rounded-lg`}
+            dropdownStyle={tw`bg-blue-500 max-w-none rounded-lg`}
+            buttonTextStyle={tw`text-center text-white`}
+            rowTextStyle={tw`text-center text-white`}
             data={country}
             onSelect={(val, index) => {
               console.log(val, index);
